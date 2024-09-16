@@ -1,10 +1,9 @@
 
-// import Cards from './asserts/Cards';  
 import Popup from './asserts/components/Popup';  
 import CardForm from './asserts/CardForm';  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  
 import { faArrowUp, faArrowDown, faComment, faBookmark, faLink, faEllipsisH } from '@fortawesome/free-solid-svg-icons';  
-import React, { useState, useEffect } from 'react'; 
+import React, { useState } from 'react'; 
 import {  User, Star } from 'lucide-react';
 import YoutubeApp from './YoutubeApp'
 import './YoutubeApp.css';

@@ -30,18 +30,18 @@ const CardForm = ({ onSubmit, onClick }) => {
         setImageUrl('');  
     };  
 
-    const handleNewCardClick = () => {  
-        if (onClick) {  
-            onClick(); // Execute the onClick function  
-        }  
-        // Optionally reset the form fields if needed  
-        setTitle('');  
-        setDescription('');  
-        setImageUrl('');  
-    };  
+    // const handleNewCardClick = () => {  
+    //     if (onClick) {  
+    //         onClick(); // Execute the onClick function  
+    //     }  
+    //     // Optionally reset the form fields if needed  
+    //     setTitle('');  
+    //     setDescription('');  
+    //     setImageUrl('');  
+    // };  
 
     // Check if all fields are filled  
-    const isFormFilled = title && description && imageUrl;  
+    // const isFormFilled = title && description && imageUrl;  
 
     return (  
         <form onSubmit={handleSubmit} className="card-form">  

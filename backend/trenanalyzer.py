@@ -1,16 +1,19 @@
 from src.extract import extract_and_analyze_trends
 import google.generativeai as genai
 import json
+import os
 
 
 
 # Configure the Generative AI model
-genai.configure(api_key="AIzaSyC-t3ycEKik5E3jxvyaufqmxcoA_G8_B1I")
+genai.configure(api_key="YOUR_GEMINI_API")
 
-# Paths to the video data files
-data_path = 'data/youtube_data.json'  # Non-trending video data
 
-trending_data_path = 'trending_data/trending_videos.json'  # Trending video data
+# Get the directory of the current script  
+current_dir = os.path.dirname(os.path.abspath(__file__))  
+# Construct a path to ""youtube_data.json" in the "data" directory  
+data_path = os.path.join(current_dir, 'src', 'data', 'youtube_data.json')
+trending_data_path  = os.path.join(current_dir, 'src', 'trending_data', 'trending_videos.json')
 
 # Analyze trends for both user video and trending video
 users_video = extract_and_analyze_trends(data_path)
@@ -50,5 +53,6 @@ def respond():
     )
     
     # Return the generated HTML text
-    print(response.text)
+    # print(response.text)
     return response.text
+respond()

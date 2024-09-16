@@ -1,7 +1,7 @@
 
 from datetime import datetime  
 import json
-
+import os 
 
 
 def extract_and_analyze_trends(file_path):  
@@ -66,8 +66,11 @@ def extract_and_analyze_trends(file_path):
 
 
 
+# # Get the directory of the current script  
+# current_dir = os.path.dirname(os.path.abspath(__file__))  
+# # Construct a path to ""youtube_data.json" in the "data" directory  
+# json_file_path = os.path.join(current_dir, 'data', 'youtube_data.json')
 
+# data_path = "data/youtube_data.json"
 
-data_path = 'data/youtube_data.json'
-
-extract_and_analyze_trends(data_path)
+# print(extract_and_analyze_trends(json_file_path))

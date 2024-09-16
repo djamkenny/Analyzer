@@ -68,3 +68,10 @@ button:hover {
   color: red;
   margin-bottom: 20px;
 }
+
+
+.loading {  
+  font-size: 20px;  
+  margin: 20px 0;  
+  color: #007BFF; /* Play around with colors to your liking */  
+}

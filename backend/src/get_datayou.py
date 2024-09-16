@@ -1,8 +1,9 @@
+
 from googleapiclient.discovery import build
-from src.get_id import get_youtube_video_id
+# from src.get_id import get_youtube_video_id
 import json
 
-YOUTUBE_API_KEY = 'AIzaSyCT29_EwhsUD0owRhRWicIPJSpIGJ6M_DA'  # Your API key
+YOUTUBE_API_KEY = 'YOUR_YOUTUBE_API'  # Your API key
 
 def extract_video_details(data):
     video_details = []
@@ -41,16 +42,16 @@ def get_youtube_video(video_id):
     except Exception as e:  
         print(f"Error: {str(e)}")
 
-# Hardcode the video ID
-if __name__ == '__main__':
-    # Take YouTube URL as input
-    youtube_url = input("Enter a YouTube URL: ")
+# # Hardcode the video ID
+# if __name__ == '__main__':
+#     # Take YouTube URL as input
+#     youtube_url = input("Enter a YouTube URL: ")
 
-    # Extract video ID
-    video_id = get_youtube_video_id(youtube_url)
+#     # Extract video ID
+#     video_id = get_youtube_video_id(youtube_url)
 
-    # Check if video ID is found and print it
-    if video_id:
-         get_youtube_video(video_id)
-    else:
-        print("Invalid YouTube URL or video ID not found")
+#     # Check if video ID is found and print it
+#     if video_id:
+#          get_youtube_video(video_id)
+#     else:
+#         print("Invalid YouTube URL or video ID not found")

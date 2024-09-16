@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoApp from "./components/TodoApp";
 import '../asserts-css/sideBar.css';
 import { Folder, FileText, Inbox, MessageCircle } from 'lucide-react'; 
-import { Eye, User, Star, Link, Calendar, Settings, Book, Users } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 
 
@@ -18,7 +18,7 @@ function SideBar() {
         <aside className="side-bar">
             <ul>            
                 
-                <li><p><Eye size={24} className="mr-2" /><br /><a href="">Overview</a></p></li>
+                <li><p><Eye size={24} className="mr-2" /><br /><a href="/home">Overview</a></p></li>
                 
                 <li><a href="#home" onClick={toggleProjects}><Folder className="mr-2" /><br /> Projects</a></li>
                 {showProjects && (  

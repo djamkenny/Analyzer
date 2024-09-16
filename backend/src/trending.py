@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 import json  
 
 # Your YouTube API Key  
-YOUTUBE_API_KEY = 'AIzaSyCT29_EwhsUD0owRhRWicIPJSpIGJ6M_DA'  
+YOUTUBE_API_KEY = 'YOUR_YOUTUBE_API'  
 
 
 
