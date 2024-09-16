@@ -1,0 +1,60 @@
+/* CardForm.css */  
+
+
+.card-form {  
+    /* width: 500px;  */
+    margin: auto; /* Center the form */  
+    padding: 30px; /* Add padding */  
+    border-radius: 12px; /* Rounded corners */  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */  
+    /* background: linear-gradient(180deg, #474250, #727273);  */
+    background-color: #1565c0a0;
+    color: white; /* Text color */  
+    margin-bottom: 20px;
+}  
+
+.card-form h2 {  
+    font-size: 24px; /* Title font size */  
+    font-weight: bold; /* Bold title */  
+    margin-bottom: 16px; /* Space below the title */  
+}  
+
+.card-form label {  
+    display: block; /* Block display for labels */  
+    font-size: 14px; /* Label font size */  
+    margin-bottom: 8px; /* Space below labels */  
+}  
+
+.card-form input,  
+.card-form textarea {  
+    width: 100%; /* Full width */  
+    padding: 12px; /* Padding inside inputs */  
+    border: 1px solid #ccc; /* Border color */  
+    border-radius: 8px; /* Rounded corners */  
+    background-color: transparent; /* Dark background for inputs */  
+    color: white; /* Text color */  
+    transition: border-color 0.3s; /* Transition for border color */  
+}  
+
+.card-form input:focus,  
+.card-form textarea:focus {  
+    outline: none; /* Remove default outline */  
+    border-color: #1e88e5; /* Change border color on focus */  
+}  
+
+.card-form button {  
+    width: 100%; /* Full width */  
+    padding: 12px; /* Padding inside button */  
+    background-color: #954000; /* Button background color */  
+    border: none; /* Remove border */  
+    border-radius: 8px; /* Rounded corners */  
+    color: white; /* Text color */  
+    font-size: 16px; /* Button font size */  
+    cursor: pointer; /* Pointer cursor on hover */  
+    transition: background-color 0.3s; /* Transition for background color */
+    margin-top: 10px;  
+}  
+
+.card-form button:hover {  
+    background-color: #1565c0; /* Darker blue on hover */  
+}

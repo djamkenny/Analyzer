@@ -1,0 +1,21 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+}
+
+/* 
+.popup-header {
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
